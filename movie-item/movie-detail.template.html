@@ -1,0 +1,9 @@
+
+<h2>{{movie.item.title}}</h2>
+<cite>{{movie.item.director}}</cite>
+
+<p>{{movie.item.abstract}}</p>
+
+<img ng-src='{{movie.item.poster}}' alt='Poster for this movie'>
+
+<button ng-click='movie.addToCart(movie.item.id)'>Add to Cart</button>

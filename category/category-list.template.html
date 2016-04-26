@@ -1,0 +1,8 @@
+
+<ul>
+    <li ng-repeat='category in categories.list'>
+        <a ui-sref='catList.catMovies({ id: category.id })'>{{category.name}}</a>
+    </li>
+</ul>
+
+<section class='movie-list' ui-view></section>

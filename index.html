@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang='en'>
+<html lang='en' ng-app='movies'>
     <head>
         <meta charset='utf-8'>
         <title>Movies</title>
@@ -10,9 +10,15 @@
         <header>
             <h1>Welcome to the Jungle</h1>
             <h2>Today is Monday</h2>
+            <nav>
+                <ul>
+                    <li><a ui-sref='home'>Home</a></li>
+                    <li><a ui-sref='catList'>Categories</a></li>
+                </ul>
+            </nav>
         </header>
 
-        <main></main>
+        <main ui-view></main>
 
         <footer>
             <p>&copy; 2016 Jungle Movies</p>
@@ -21,7 +27,10 @@
         <script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.min.js'></script>
         <script src='http://angular-ui.github.io/ui-router/release/angular-ui-router.js'></script>
 
-        <script src='app/app.js'></script>
+        <script src='app/movies.module.js'></script>
+        <script src='category/category.controller.js'></script>
+        <script src='movie-item/movie-list.controller.js'></script>
+        <script src='search/search.controller.js'></script>
 
     </body>
 </html>

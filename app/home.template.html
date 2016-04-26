@@ -1,0 +1,9 @@
+
+<p>This is my terrible movie shop, filled with terrible movies.</p>
+
+<form name='movieSearch' ng-controller='SearchController as search' ng-submit='search.doSearch()'>
+    <input type='text' name='query' ng-model='search.query' placeholder='Search query'>
+    <input type='submit' value='Go'>
+</form>
+
+<aside class='featured-movie' ui-view></aside>

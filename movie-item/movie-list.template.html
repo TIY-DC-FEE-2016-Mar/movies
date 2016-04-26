@@ -1,0 +1,11 @@
+
+<h3 ng-show='movieList.categoryId'>Category: {{movieList.categoryId}}</h3>
+
+<h3 ng-show='movieList.searchQuery'>Query: {{movieList.searchQuery}}</h3>
+
+<ul>
+    <li ng-repeat='movie in movieList.results'>
+        {{movie.title}} {{movie.director}}
+        <button ng-click='movieList.addToCart(movie.id)'>Add To Cart</button>
+    </li>
+</ul>
